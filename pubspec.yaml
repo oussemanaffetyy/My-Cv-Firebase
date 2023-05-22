@@ -39,10 +39,33 @@ dependencies:
   firebase_core: ^2.13.0
   provider: ^6.0.5
   http: ^0.13.6
+  shared_preferences: ^2.1.1
+
+  vector_math: ^2.0.8
+  flutter_launcher_icons: "^0.13.1"
+  easy_splash_screen: ^1.0.4
+  google_maps_flutter: ^2.1.1
+  geolocator: ^7.6.2
+  permission_handler: ^8.2.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "images/logo1.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "images/logo1.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "images/logo1.png"
+    icon_size: 48 # min:48, max:256, default: 48
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -61,6 +84,10 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+     - images/oussema.jpg
+     - images/logo1.png
+     - images/maps.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -78,6 +105,14 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+  - family: Pacifico
+    fonts:
+    - asset: fonts/Pacifico-Regular.ttf
+
+  - family: Source Sans Pro
+    fonts:
+    - asset: fonts/SourceSansPro-Regular.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:
