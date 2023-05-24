@@ -26,8 +26,7 @@ class MainSplashScreen extends StatelessWidget {
           logoWidth: 100,
           showLoader: true,
           loadingText: Text("Loading..."),
-          navigator: MyHomePage(title: '', key: UniqueKey(),),
-          durationInSeconds: 4,
+          durationInSeconds: 3,
         ),
      
     );

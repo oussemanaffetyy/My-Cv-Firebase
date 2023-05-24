@@ -57,7 +57,7 @@ class EducationPage extends StatelessWidget {
   Widget _buildEducationItem(String duration, String title) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.teal,
+        color: Colors.blueAccent,
         borderRadius: BorderRadius.circular(8.0),
       ),
       padding: const EdgeInsets.all(16.0),
@@ -85,7 +85,7 @@ class EducationPage extends StatelessWidget {
   Widget _buildSpecialtiesItem(String title, String specialties) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.teal,
+        color: Colors.blueAccent,
         borderRadius: BorderRadius.circular(8.0),
       ),
       padding: const EdgeInsets.all(16.0),

@@ -12,7 +12,7 @@ class Experience extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                color: Colors.teal,
+                color: Colors.blueAccent,
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Padding(
@@ -27,7 +27,7 @@ class Experience extends StatelessWidget {
             const SizedBox(height: 16),
             Container(
               decoration: BoxDecoration(
-                color: Colors.teal,
+                color: Colors.blueAccent,
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Padding(
@@ -42,7 +42,7 @@ class Experience extends StatelessWidget {
             const SizedBox(height: 16),
             Container(
               decoration: BoxDecoration(
-                color: Colors.teal,
+                color: Colors.blueAccent,
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Padding(
