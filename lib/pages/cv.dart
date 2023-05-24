@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class cv extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -33,6 +34,7 @@ class cv extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                
                 SizedBox(
                   height: 20.0,
                   width: 150.0,
@@ -40,9 +42,19 @@ class cv extends StatelessWidget {
                     color: Colors.teal.shade100,
                   ),
                 ),
+                 Text(
+                  'Contatct me',
+                  style: TextStyle(
+                    fontFamily: 'Source Sans Pro',
+                    color: Color.fromARGB(255, 255, 255, 255),
+                    fontSize: 20.0,
+                    letterSpacing: 2.5,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
                 Card(
                     margin: const EdgeInsets.symmetric(
-                        vertical: 10.0, horizontal: 25.0),
+                        vertical: 8.0, horizontal: 20.0),
                     child: ListTile(
                       leading: const Icon(
                         Icons.phone,
@@ -59,7 +71,7 @@ class cv extends StatelessWidget {
                     )),
                 Card(
                     margin: const EdgeInsets.symmetric(
-                        vertical: 10.0, horizontal: 25.0),
+                        vertical: 8.0, horizontal: 20.0),
                     child: ListTile(
                       leading: const Icon(
                         Icons.email,
@@ -72,7 +84,53 @@ class cv extends StatelessWidget {
                             color: Colors.blue.shade900,
                             fontFamily: 'Source Sans Pro'),
                       ),
-                    ))
+                    )
+                    ),
+                    Card(
+                 margin: const EdgeInsets.symmetric(
+                        vertical: 8.0, horizontal: 20.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: <Widget>[
+                      IconButton(
+                        onPressed: () {
+                          launch("https://www.facebook.com/oussemanaffetyy/");
+                        },
+                        color: Colors.blue,
+                        icon: Icon(FontAwesomeIcons.facebook),
+                      ),
+                      IconButton(
+                        onPressed: () {
+                          launch("https://twitter.com/oussemanaffetyy");
+                        },
+                        color: Colors.blueAccent,
+                        icon: Icon(FontAwesomeIcons.twitter),
+                      ),
+                      IconButton(
+                        onPressed: () {
+                          launch("https://www.instagram.com/oussemanaffetyy/");
+                        },
+                        color: Colors.red,
+                        icon: Icon(FontAwesomeIcons.instagram),
+                      ),
+                      IconButton(
+                        onPressed: () {
+                          launch("https://www.linkedin.com/in/oussemanaffety/");
+                        },
+                        color: Colors.blueGrey,
+                        icon: Icon(FontAwesomeIcons.linkedin),
+                      ),
+                      IconButton(
+                        onPressed: () {
+                          launch("https://github.com/oussemanaffetyy");
+                        },
+                        color: Colors.black,
+                        icon: Icon(FontAwesomeIcons.github),
+                      ),
+                    ],
+                  ),
+                ),
+              
               ]),
         ));
   }

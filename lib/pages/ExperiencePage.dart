@@ -18,9 +18,10 @@ class Experience extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: _buildExperienceSection(
-                  '15/07/2022-15/08/2022',
-                  'Website Development - CR LASER',
-                  'Used Angular and Spring Boot to develop a website for the company. Manipulated data of 30 workers to build a database using MySQL.',
+                  'Février 2020 - Mars 2020',
+                  'Stage d initiation',
+                  'La société TPAP, TRANSFORMATION PAPIER spécialisée Papier.',
+                  ' - Connaissances des éléments de bases d’une installation électrique et informatique',
                 ),
               ),
             ),
@@ -33,9 +34,10 @@ class Experience extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: _buildExperienceSection(
-                  '18/03/2019-18/06/2019',
-                  'Python and MATLAB Developer - SINAY-France',
-                  'Developed, implemented, and improved Python and MATLAB code for a project. Conducted unit, functional, and technical testing. Created data analysis solutions, technical documentation, and performed technology watch.',
+                  'Juillet 2021 - Août 2020',
+                  'Stage Technicien',
+                  'ManagerX Solutions, Solutions de Gestion pour tous les Types de Projets',
+                  ' - Conception et développement d’une application mobile Android de management client en utilisant Java, PHP, JSON, SQL,XML.',
                 ),
               ),
             ),
@@ -48,9 +50,13 @@ class Experience extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: _buildExperienceSection(
-                  '18/03/2019-18/06/2019',
-                  'MATLAB Developer - MLI Production',
-                  'Improved image and signal processing solutions. Conducted functional and technical testing.',
+                  'Février 2022 à Juin 2022',
+                  'STAGE DE FIN D’ETUDES',
+                  'SMARTER, Société Administratif & Logistique',
+                  ' - Étude et conception d’une application de commande par reconnaissance des objets.'
+
+                  ,
+
                 ),
               ),
             ),
@@ -60,15 +66,16 @@ class Experience extends StatelessWidget {
     );
   }
 
-  Widget _buildExperienceSection(String duration, String title, String description) {
+  Widget _buildExperienceSection(String duration, String title, String description, String s) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(duration, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
         const SizedBox(height: 8),
-        Text(title, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white)),
+        Text(title, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold, color: Colors.white)),
         const SizedBox(height: 8),
         Text(description),
+        Text(s)
       ],
     );
   }

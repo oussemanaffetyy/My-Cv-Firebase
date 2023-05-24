@@ -4,8 +4,11 @@ class EducationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       body: SingleChildScrollView(
+        
         padding: const EdgeInsets.all(16.0),
+        
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -15,18 +18,18 @@ class EducationPage extends StatelessWidget {
             ),
             const SizedBox(height: 16.0),
             _buildEducationItem(
-              '2021-PRESENT',
-              '2nd Year Computer Engineering - IIT',
+              '2023 - Master professionnel',
+              'Développement des Systèmes Informatiques et Réseaux (DSIR)',
             ),
             const SizedBox(height: 16.0),
             _buildEducationItem(
-              '2017-2019',
-              'Master in Applied Mathematics - FSS',
+              '2022 - License appliqué en technologie de l informatique',
+              'Embedded and mobile system',
             ),
             const SizedBox(height: 16.0),
             _buildEducationItem(
-              '2012-2017',
-              'Bachelor of Science in Mathematics - FSS',
+              '2019 - Baccalauréat',
+              'Baccalauréat En Informatique',
             ),
             const SizedBox(height: 32.0),
             const Text(
@@ -38,16 +41,7 @@ class EducationPage extends StatelessWidget {
               'Computer Engineering',
               'Software Engineering, Decisional Informatics, Web Development, Deep Learning, Entrepreneurial Management',
             ),
-            const SizedBox(height: 16.0),
-            _buildSpecialtiesItem(
-              'Applied Mathematics',
-              'Image Processing, Signal Processing, Mathematical Morphology, Pattern Recognition, Audiovisual Production, Telecommunication',
-            ),
-            const SizedBox(height: 16.0),
-            _buildSpecialtiesItem(
-              'Mathematics',
-              'Probability, Statistics, Scientific Computation and Numerical Methods, Numerical Analysis, Linear Algebra, Integration and Differential Equations',
-            ),
+           
           ],
         ),
       ),

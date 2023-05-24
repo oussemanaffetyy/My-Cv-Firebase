@@ -28,7 +28,7 @@ class MyHomePage extends StatelessWidget {
   }
 }
 
-List<Widget> pages = [cv(), EducationPage(), Experience(), skill(), MapPage()];
+List<Widget> pages = [cv(), EducationPage(), Experience(), Skill(), MapPage()];
 PageController _pageController = PageController(initialPage: 0);
 
 class BottomNavCustom extends StatefulWidget {
