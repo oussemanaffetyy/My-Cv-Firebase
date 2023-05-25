@@ -9,8 +9,9 @@ class Skill extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
+          
           children: [
-         
+         Padding(padding: const EdgeInsets.all(16.0)),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [

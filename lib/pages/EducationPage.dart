@@ -23,23 +23,13 @@ class EducationPage extends StatelessWidget {
             ),
             const SizedBox(height: 16.0),
             _buildEducationItem(
-              '2022 - License appliqué en technologie de l informatique',
+              '2022 - License appliqué en technologie de l’informatique',
               'Embedded and mobile system',
             ),
             const SizedBox(height: 16.0),
             _buildEducationItem(
               '2019 - Baccalauréat',
               'Baccalauréat En Informatique',
-            ),
-            const SizedBox(height: 32.0),
-            const Text(
-              'SPECIALTIES',
-              style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 16.0),
-            _buildSpecialtiesItem(
-              'Computer Engineering',
-              'Software Engineering, Decisional Informatics, Web Development, Deep Learning, Entrepreneurial Management',
             ),
            
           ],

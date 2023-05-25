@@ -9,7 +9,12 @@ class Experience extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          
           children: [
+            const Text(
+              'EXPERIENCE',
+              style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+            ),
             Container(
               decoration: BoxDecoration(
                 color: Colors.blueAccent,
@@ -19,7 +24,7 @@ class Experience extends StatelessWidget {
                 padding: const EdgeInsets.all(16.0),
                 child: _buildExperienceSection(
                   'Février 2020 - Mars 2020',
-                  'Stage d initiation',
+                  'Stage d’initiation',
                   'La société TPAP, TRANSFORMATION PAPIER spécialisée Papier.',
                   ' - Connaissances des éléments de bases d’une installation électrique et informatique',
                 ),
